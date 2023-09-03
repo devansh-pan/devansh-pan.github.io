@@ -3,4 +3,4 @@ Here yu can say lots of fun things about your site.
 Maybe say a some things about yourself.
 
 Or maybe what you plan to blog about.
-<h1 class="text-success">Thvcghvhnjnxnbvhj</h1>
+{:.text-success}Thvcghvhnjnxnbvhj
