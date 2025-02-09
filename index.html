@@ -74,7 +74,7 @@ function change(value) {
             });
         }
 
-        function convertToWebP(img, quality = qlty || 0.8) {
+        function convertToWebP(img, quality = qlty) {
             return new Promise((resolve, reject) => {
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
