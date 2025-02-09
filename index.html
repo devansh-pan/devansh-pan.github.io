@@ -30,11 +30,11 @@
     <script>
         const fileInput = document.getElementById('fileInput');
         const downloadLink = document.getElementById('downloadLink');
-        let qlty = document.getElementById('qlty').value;
+        let qlty = parseFloat(document.getElementById('qlty').value);
       const demo =  document.getElementById("demo") ;
         demo.textContent = qlty;
 function change(value) {
-    qlty = value;
+    qlty = parseFloat(value);
     demo.textContent = value ;
 }
         fileInput.addEventListener('change', async (e) => {
@@ -75,7 +75,7 @@ function change(value) {
         }
 
         function convertToWebP(img, quality = qlty) {
-            console.log(quality);
+            console.log(typeof quality);
             return new Promise((resolve, reject) => {
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
